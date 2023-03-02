@@ -4,18 +4,25 @@
  */
 package com.siemens.beginning;
 
-import java.io.IOException;
-import java.time.Instant;
+import java.util.Arrays;
+import java.util.List;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.util.StringUtils;
 
-        
-        // Design Patterns
-        //https://www.youtube.com/watch?v=v9ejT8FO-7I&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=2
+// Design Patterns
+//https://www.youtube.com/watch?v=v9ejT8FO-7I&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=2
+@SpringBootApplication()
 public class Beginning {
 
     public static void main(String[] args) {
         System.out.println("Design patterns study");
-    OuterClass.InnerClass myInner = new OuterClass.InnerClass(2);
-//    System.out.println(myInner.getInnerNum());
+
+
+        List<String> messages = Arrays.asList("hello", "baeldung", "readers!");
+
+//        messages.forEach(word -> System.out.println(StringUtils.capitalize(word)));
+messages.forEach(StringUtils::capitalize);
+//        System.out.println(messages);
 
     }
 }

@@ -10,6 +10,8 @@ package com.siemens.beginning;
  */
 public class OuterClass {
 
+    public OuterClass() {
+    }
 
       int x = 10;
 

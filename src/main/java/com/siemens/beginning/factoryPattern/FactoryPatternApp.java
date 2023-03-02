@@ -15,8 +15,7 @@ public class FactoryPatternApp {
         // This is possible because of polymorphism
         // All animal classes have the method animalSound
         soundFactory.createAnimal().animalSound();
-                
-                
+        
 
 
     }
